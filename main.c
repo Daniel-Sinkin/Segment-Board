@@ -7,6 +7,7 @@ typedef int (*board_ptr)[Y_SIZE][X_SIZE];
 
 #define ACTIVE_CHAR '#'
 #define INACTIVE_CHAR ' '
+#define CORNER_CHAR ' '
 
 void board_print(int board[Y_SIZE][X_SIZE]) {
     printf("      12345\n");
@@ -18,7 +19,7 @@ void board_print(int board[Y_SIZE][X_SIZE]) {
         printf("%zu %s", y + 1, "-|  ");
         for(size_t x = 0; x < X_SIZE; x++) {
             if((y == 0 && (x == 0 || x == 4)) || (y == 4 && (x == 0 || x == 4)) || (y == 8) && (x == 0 || x == 4)) {
-                printf("%c", INACTIVE_CHAR);
+                printf("%c", CORNER_CHAR);
             } else {
                 if(board[y][x] == 0) {
                     printf("%c", INACTIVE_CHAR);
