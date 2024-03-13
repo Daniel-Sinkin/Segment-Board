@@ -4,7 +4,7 @@ In the scope of learning how to programm in C I've created this program that par
 For a full run that parses `+ACG-A~+F+A+G+B-A-F~+A` see `output.txt`.
 
 ## Implemented Functionality
-* Adding (via prefix `+` or just writing the letter) and removing (Via prefix `-`) 7 different segment pieces, labels A, ..., F inspired by [ElectronicsTutorials](https://www.electronics-tutorials.ws/blog/7-segment-display-tutorial.html).
+* Adding (via prefix `+` or just writing the letter) and removing (via prefix `-`) 7 different segment pieces, labels A, ..., F inspired by [ElectronicsTutorials](https://www.electronics-tutorials.ws/blog/7-segment-display-tutorial.html).
 * Clearing / Resetting the board.
 * Compilation and saving of information via a shell script.
 
