@@ -2,39 +2,23 @@
 In the scope of learning how to programm in C I've created this program that parses an inputstring representing different commands that can be sent to a segment board.
 
 For a full run that parses `+ACG-A~+F+A+G+B-A-F~+A` see `output.txt`.
-## Printing Predefined Characters
+## Examples: Printing Predefined Characters and adding segments
+For compactness those two results are written side-by-side instead of one after the other.
 ```
-Printing 'E'.
-      12345
-      |||||
-   +--+++++--
-   |  
-1 -|   ### 
-2 -|  #    
-3 -|  #    
-4 -|  #    
-5 -|   ### 
-6 -|  #    
-7 -|  #    
-8 -|  #    
-9 -|   ###
-```
-## Adding segments.
-```
-Adding Segment 'A'
-      12345
-      |||||
-   +--+++++--
-   |  
-1 -|   ### 
-2 -|       
-3 -|       
-4 -|       
-5 -|       
-6 -|       
-7 -|       
-8 -|       
-9 -|    
+Printing 'E'.                        Adding Segment 'A'
+      12345                                12345
+      |||||                                |||||
+   +--+++++--                           +--+++++--
+   |                                    |  
+1 -|   ###                           1 -|   ### 
+2 -|  #                              2 -|   
+3 -|  #                              3 -|   
+4 -|  #                              4 -|   
+5 -|   ###                           5 -|   
+6 -|  #                              6 -|   
+7 -|  #                              7 -|   
+8 -|  #                              8 -|   
+9 -|   ###                           9 -|   
 ```
 ## Implemented Functionality
 * Adding (via prefix `+` or just writing the letter) and removing (via prefix `-`) 7 different segment pieces, labels A, ..., F inspired by [ElectronicsTutorials](https://www.electronics-tutorials.ws/blog/7-segment-display-tutorial.html).
